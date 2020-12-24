@@ -5,9 +5,7 @@ with open('./01.txt') as myinput:
 
 #Part 1
 
-floor = instructions.count('(')-instructions.count(')')
-
-print(floor)
+print(instructions.count('(') - instructions.count(')'))
 
 #Part 2
 
