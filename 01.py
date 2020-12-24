@@ -11,7 +11,7 @@ print(instructions.count('(') - instructions.count(')'))
 
 current_floor = 0
 for i in range(len(instructions)):
-    if instructions[i] is '(':
+    if instructions[i] == '(':
         current_floor += 1
     else:
         current_floor -= 1
