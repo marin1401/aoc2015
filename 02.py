@@ -5,8 +5,7 @@ with open('./02.txt') as myinput:
 
 boxes = [list(map(int, i.replace('\n', '').split('x'))) for i in boxes_raw]
 
-required_wrapping_paper = 0
-required_ribbon = 0
+required_wrapping_paper, required_ribbon = 0, 0
 for box in boxes:
     lw = box[0] * box[1]
     wh = box[1] * box[2]
