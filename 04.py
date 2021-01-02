@@ -10,8 +10,7 @@ def find_hash(key, leading_numbers):
     while not result:
         if hashlib.md5(f'{key}{i}'.encode()).hexdigest()[:len(leading_numbers)] == leading_numbers:
             result = i
-        else:
-            i += 1
+        i += 1
     return result
 
 #Part 1
